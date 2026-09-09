@@ -1,0 +1,12 @@
+The current target style is {TARGET_STYLE}.
+Use the following text as fixed reference anchors for style intensity:
+0-point anchor:
+{ANCHOR_0}
+
+The 0-point anchor represents the minimum intensity of the target style, while the 100-point represents the maximum intensity.
+For each candidate text, assign a style-intensity score from 0 to 100:
+{REF_N}
+
+Evaluate only the degree of {TARGET_STYLE} expressed in each text. Do not base the score on the candidate's position, text length, semantic quality, fluency, or other unrelated properties.
+Return only a valid JSON object.
+Example output:
