@@ -1,0 +1,22 @@
+Given the source text, target style, and target-style reference texts, generate exactly {N} intermediate versions.
+
+Requirements:
+
+1. The style must change progressively from the source toward the target style.
+2. The style changes across the {N} levels should be approximately evenly distributed.
+3. Preserve the original meaning and factual content.
+4. Keep the text length approximately similar to the source text.
+5. Level {N} must match the style intensity of the target-style reference texts.
+
+Source text:
+{SOURCE_TEXT}
+
+Target style:
+{TARGET_STYLE}
+
+Target-style reference texts:
+{REF_N}
+
+Return only valid JSON in the following format:
+
+
