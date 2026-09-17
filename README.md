@@ -118,7 +118,7 @@ tqdm
 transformers
 sklearn
 sentence_transformers
-```text
+```
 The scripts used for external LLM requests additionally require:
 ```text
 openai
