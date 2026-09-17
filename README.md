@@ -38,7 +38,7 @@ In this study, negative reviews are used as source texts and positive sentiment 
 The Shakespeare dataset contains parallel Shakespearean-style and modern English sentences and is used for literary style transfer.
 
 Original source:
-[ADD THE EXACT DATASET URL USED IN THIS PROJECT]
+https://github.com/harsh19/Shakespearizing-Modern-English  
 
 In this study, Shakespearean-style sentences are used as source texts and modern English is treated as the target style.
 
