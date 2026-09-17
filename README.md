@@ -82,3 +82,44 @@ StyleEva/
 │       └── Pairwise Relational Learning experiments
 │
 └── README.md
+```
+## 4. Usage Instructions
+
+The main experimental scripts are organized according to the three comparison models described above. In all three model directories, task1 corresponds to the Yelp Sentiment dataset, while task8 corresponds to the Shakespeare dataset.
+
+For Generic Embedding, run:
+```text
+/get_score/sbert_model.py
+```
+Before execution, specify the project root directory and the local path of the all-mpnet-base-v2 model.
+
+For Multiclass Classification, run:
+```text
+/multi_class/model_class.py
+```
+Before execution, specify the project root directory and the local path of the Llama-3.2-3B-Instruct model used for token representation extraction.
+
+For Pairwise Relational Learning, run:
+```text
+/contrastive/model_class.py
+```
+Similarly, specify the project root directory and the local path of Llama-3.2-3B-Instruct before execution.
+
+The scripts under /get_cand and /get_score are used to request LLMs for generating dense intermediate stylistic variants and obtaining repeated stylistic intensity scores. Since all intermediate texts and scoring results used in the experiments are already provided in this repository, these scripts do not need to be rerun for reproducing the main experiments. If regeneration is required, users must provide their own corresponding LLM API keys.
+
+## 5. Requirements
+
+The main Python dependencies used in this project are:
+
+```text
+torch
+numpy
+tqdm
+transformers
+sklearn
+sentence_transformers
+```text
+The scripts used for external LLM requests additionally require:
+```text
+openai
+```
